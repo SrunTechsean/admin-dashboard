@@ -8,7 +8,31 @@
     </head>
     <body>
         <div class="dashboard">
-            <header class="header"></header>
+            <header class="header">
+                <div class="header__top">
+                    <div class="search">
+                        <span class="icon search__icon">?</span>
+                        <input class="search__input" type="search">
+                    </div>
+                    <div class="header__profile">
+                        <span class="icon search__icon">D</span>
+                        <div class="header__profile--small">
+                            <svg
+                                width="40"
+                                height="40"
+                                viewBox="0 0 200 200"
+                                role="img"
+                                aria-labelledby="profileTitle"
+                            >
+                                <title id="profileTitle">User profile picture</title>
+                                <circle cx="100" cy="100" r="100" fill="#e2e8f0" />
+                            </svg>
+                        </div>
+                        <span class="header__username--small">Morgan Oakley</span>
+                    </div>
+                </div>
+                <div class="header__down"></div>
+            </header>
             <aside class="sidebar">
                 <header class="sidebar__header">
                     <a class="sidebar__link" href="#">
