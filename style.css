@@ -3,6 +3,13 @@
     --color-bg-white: #fff;
     --color-bg-grey: #e2e8f0;
     --color-accent: #f0b529;
+
+    /* Text Decoration */
+    --header1-font-size: 2.6rem;
+    --header2-font-size: 1.8rem;
+    --paragraph-font-size: 1.2rem;
+
+    --bold: 700;
 }
 /* 1. Use a more-intuitive box-sizing model */
 *,
@@ -114,8 +121,8 @@ ul {
 
 .sidebar__nav {
     padding-left: 1rem;
-    font-size: 1.8rem;
-    font-weight: 650;
+    font-size: var(--header2-font-size);
+    font-weight: var(--bold);
 }
 
 .sidebar__menu {
@@ -132,7 +139,36 @@ ul {
 }
 
 .sidebar__header {
-    font-size: 2.6rem;
-    font-weight: 650;
+    font-size: var(--header1-font-size);
+    font-weight: var(--bold);
     color: var(--color-bg-white);
+}
+
+/* Header */
+
+.header {
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+    justify-content: center;
+}
+.header__top {
+    display: flex;
+    gap: clamp(1rem, 25vw, 30rem);
+}
+
+.search__input {
+    width: clamp(35rem, 35vw, 50rem);
+    appearance: none;
+    background-color: var(--color-bg-grey);
+    border: none;
+    border-radius: 5rem;
+}
+
+.search,
+.header__profile {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    font-size: var(--header2-font-size);
+    font-weight: var(--bold);
 }
