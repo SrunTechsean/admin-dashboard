@@ -285,7 +285,7 @@ ul {
     height: 20rem;
     padding: 3rem 3rem;
     background-color: var(--color-bg-white);
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
 
 .card__tittle {
@@ -319,5 +319,37 @@ ul {
 }
 
 .card--border {
-    border-left: 6px solid var(--color-accent);
+    border-left: 10px solid var(--color-accent);
 }
+
+/* Anoucnement Section */
+.announcements__container {
+    flex: 1;
+    height: 34rem;
+    padding: 3rem;
+    overflow-y: auto;
+    background-color: var(--color-bg-white);
+    border-radius: 1rem;
+}
+
+.announcements__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements__tittle {
+    font-size: var(--paragraph-font-size);
+    font-weight: bold;
+}
+
+.announcements__content {
+    font-size: var(--paragraph-font-size);
+    font-weight: normal;
+    color: var(--paragraph-text-color);
+}
+
+.announcements__line {
+    margin: 1.5rem 0rem;
+}
+
+/* Trending Section */
