@@ -29,6 +29,7 @@ html {
 body {
     /* 4. Increase line-height */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
     /* 4. Increase line-height */
     -webkit-font-smoothing: antialiased;
     /* 4. Increase line-height */
@@ -195,8 +196,6 @@ ul {
     display: flex;
     gap: 2rem;
     align-items: center;
-    font-size: var(--header2-font-size);
-    font-weight: bold;
 }
 
 .header__greeting {
